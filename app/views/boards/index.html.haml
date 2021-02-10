@@ -1,21 +1,11 @@
 .container
-  .tabs
-    .tabs_item
-      新着記事一覧
-    .tabs_item
-      タイムライン
+  %p.header_pageTitle All Boards
   - @boards.each do |board|
-    .card
-      .card_image
-        = image_tag 'eyecatch1.png'
-      .card_content
+    = link_to board_path(board) do
+      .card
         .card_title
           = board.title
-        .card_heart
-          = image_tag 'heart.svg'
-          %span 23
-        .card_detail
-          = image_tag 'default-avatar.png'
-          %div
-            %p cohki0305
-            %p 2020/4/16
+          .card_content
+            = board.content
+          .card_detail
+            = image_tag 'default-avatar.png'
