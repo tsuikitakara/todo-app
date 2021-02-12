@@ -2,7 +2,7 @@ $heart-size: 32px;
 $avatar-size: 32px;
 
 .board {
-  background-color: white;
+  background-color: #f4f4f4;
   margin: 16px 16px;
   padding: 16px 16px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -14,15 +14,21 @@ $avatar-size: 32px;
 
   &_detail {
     padding-top: 10px;
-    cursor: pointer;
     display: flex;
     font-size: 12px;
+    position: relative;
 
     img {
+      cursor: pointer;
       width: $avatar-size;
       height: $avatar-size;
       border-radius: 100%;
       margin-right: 16px;
+    }
+
+    &_actions {
+        right: 0px;
+        position: absolute;
     }
   }
 
