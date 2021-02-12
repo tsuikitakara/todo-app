@@ -9,7 +9,12 @@
             = board.content
           .card_detail
             = image_tag 'default-avatar.png'
-    = link_to new_board_path do
-      .float_btn
-        %i.fa.fa-plus
-
+    .board_detail_actions
+      .dropdown
+        = image_tag 'actions.svg', class: 'dropbtn'
+        .dropdown-content.mini
+          %a{:href => "#"} Edit
+          %a{:href => "#"} Delete
+  = link_to new_board_path do
+    .float_btn
+      %i.fa.fa-plus
