@@ -14,11 +14,13 @@
   %body
   .container
     %header.header
-      %p.header_pageTitle Boards
-      .dropdown
-        = image_tag 'default-avatar.png', class: 'header_avatar dropbtn'
-        .dropdown-content
-          %a{:href => "#"} プロフィール
-          %a{:href => "#"} ログアウト
+      %p.header_pagetitle Boards
+    %p.header_border
+      = image_tag 'line.png'
+      -# .dropdown
+      -#   = image_tag 'default-avatar.png', class: 'header_avatar dropbtn'
+      -#   .dropdown-content
+      -#     %a{:href => "#"} プロフィール
+      -#     %a{:href => "#"} ログアウト
 
     = yield
