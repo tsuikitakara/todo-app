@@ -1,20 +1,20 @@
 .container
-  %p.header_pageTitle All Boards
+  %p.board_title All Boards
   - @boards.each do |board|
-    = link_to board_path(board) do
+    = link_to board_path(board) do 
       .card
         .card_title
           = board.title
-          .card_content
-            = board.content
-          .card_detail
-            = image_tag 'default-avatar.png'
-    .board_detail_actions
-      .dropdown
-        = image_tag 'actions.svg', class: 'dropbtn'
-        .dropdown-content.mini
-          %a{:href => "#"} Edit
-          %a{:href => "#"} Delete
+        .board_detail_actions
+          .dropdown-boards
+            = image_tag 'action.png'
+            .dropdown-boards-mini
+              = link_to 'Edit', edit_board_path(@board)
+              -# %a{:href => "#"} Delete
+        .card_content
+          = board.content
+        .card_detail
+          = image_tag 'default-avatar2.png'
   = link_to new_board_path do
-    .float_btn
-      %i.fa.fa-plus
+    .new_btn
+      %p +Add new board
