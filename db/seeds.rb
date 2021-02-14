@@ -9,7 +9,7 @@
 10.times do
 
 Board.create(
-    title: Faker::Lorem.sentence(word_count: 5),
-    content: Faker::Lorem.sentence(word_count: 20),
+    title: Faker::Lorem.sentence(word_count: 0),
+    content: Faker::Lorem.sentence(word_count: 0),
 )
 end

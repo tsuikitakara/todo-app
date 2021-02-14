@@ -12,7 +12,7 @@ $header-padding-y: 16px;
 
   &_border {
     position: absolute;
-    width: 1920px;
+    width: 1500px;
     height: 1px;
     left: 0px;
     top: 50px;
@@ -22,17 +22,12 @@ $header-padding-y: 16px;
   }
 
   &_pageTitle {
-    color: black;
+    position: absolute;
     font-family: Avenir;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-  }
-
-  &_avatar {
-    width: $avatar-size;
-    height: $avatar-size;
-    border-radius: 100%;
+    color: #000000;
   }
 }
