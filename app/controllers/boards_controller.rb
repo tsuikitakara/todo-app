@@ -16,12 +16,23 @@ class BoardsController < ApplicationController
       if @board.save
         redirect_to board_path(@board)
       else
+        flash.now[:error] = 'Error'
         render :new
       end
     end
 
     def edit
       @board = Board.find(params[:id])
+    end
+
+    def  update
+      @board = Board.find(params[:id])
+      if @board.update(board_params)
+        redirect_to board_path(@board)
+      else
+        flash.now[:error] = 'Error'
+        render :edit
+      end
     end
 
     private

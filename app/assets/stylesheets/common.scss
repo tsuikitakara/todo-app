@@ -2,34 +2,33 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  
 }
 
-.dropdown-content {
+.dropdown_boards {
   font-weight: normal;
+  font-size: 12px;
   display: none;
   right: 0;
   position: absolute;
-  background-color: white;
-  min-width: 160px;
+  width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-
-  &.mini {
-    min-width: 100px;
-  }
+  border-radius: 10px;
 }
 
-.dropdown-content a {
+.dropdown_boards a {
   padding: 8px 16px;
   text-decoration: none;
   display: block;
-  color: $text-base-color;
+  // color: $text-base-color;
 }
 
-.dropdown-content a:hover {
+.dropdown_boards a:hover {
   background-color: white;
+  border-radius: 10px;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown_boards {
   display: block;
 }
