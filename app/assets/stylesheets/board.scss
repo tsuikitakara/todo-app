@@ -5,7 +5,6 @@ $avatar-size: 32px;
   background-color: #f4f4f4;
   margin: 16px 16px;
   padding: 16px 16px;
-  position: relative;
 
   &_title {
     font-family: Avenir;
@@ -14,25 +13,23 @@ $avatar-size: 32px;
     font-size: 26px;
     line-height: 36px;
     color: #000000;
-    padding: 30px 0 30px 0;
+    padding: 30px 0;
 
   }
 
   &_detail {
     padding-top: 10px;
-    display: flex;
 
     &_actions {
-      right: 4%;
-      margin-top: 30px;
-      position: absolute;
+      margin: 20px 14px 0 0;
+      float: right;
       font-size: 12px;
+      display: inline-block;
 
     }
   }
 
   &_content {
-    position: absolute;
     height: 19px;
     left: 0%;
     right: 0%;

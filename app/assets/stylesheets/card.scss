@@ -3,13 +3,13 @@ $heart-size: 16px;
 $avatar-size: 32px;
 
 .card {
-  position: absolute;
   width: 100%;
   background: #F4F4F4;
   border-radius: 10px;
+  margin-bottom: 25px;
+  
 
   &_title {
-    position: absolute;
     font-size: 18px;
     padding: 20px 0px 0px 14px;
     font-family: Avenir;
@@ -20,9 +20,8 @@ $avatar-size: 32px;
   }
 
   &_detail {
-    padding: 110px 0 20px 14px;
+    padding: 30px 0 20px 14px;
     cursor: pointer;
-    display: flex;
     font-size: 10px;
 
     img {
@@ -34,8 +33,7 @@ $avatar-size: 32px;
   }
 
   &_content {
-    position: absolute;
-    padding: 60px 0 0 14px;
+    padding: 10px 0 0 14px;
     font-family: Avenir;
     font-size: 14px;
     line-height: 19px;
