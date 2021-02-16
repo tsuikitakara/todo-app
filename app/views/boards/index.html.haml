@@ -1,6 +1,5 @@
 .container
   %p.board_title All Boards
-  .card-top
   - @boards.each do |board|
     = render 'commons/board', board: board
   .new_btn

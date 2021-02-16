@@ -1,13 +1,13 @@
 .card
+  .board_detail_actions
+    .dropdown
+      = image_tag 'action.png'
+      .dropdown_boards
+        = link_to 'Edit', edit_board_path(board)
+        = link_to 'Delete', board_path(board), data: { method: 'delete', confirm: 'Can I delete it?' } 
   = link_to board_path(board) do
     .card_title
       = board.title
     .card_content= board.content
     .card_detail
       = image_tag 'default-avatar2.png'
-.board_detail_actions
-  .dropdown
-    = image_tag 'action.png'
-    .dropdown_boards
-      = link_to 'Edit', edit_board_path(board)
-      -# %a{:href => "#"} Delet
