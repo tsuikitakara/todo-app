@@ -21,17 +21,30 @@ $avatar-size: 32px;
   &_detail {
     padding-top: 10px;
     display: flex;
-    font-size: 12px;
-    position: relative;
 
     &_actions {
-      right: 14%;
-      margin-top: 40px;
+      right: 4%;
+      margin-top: 30px;
       position: absolute;
+      font-size: 12px;
+
     }
   }
 
   &_content {
+    position: absolute;
+    height: 19px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 19px/2 + 15.5px);
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.4;
     
   }
 
