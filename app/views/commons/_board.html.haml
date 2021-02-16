@@ -8,6 +8,7 @@
   = link_to board_path(board) do
     .card_title
       = board.title
-    .card_content= board.content
+    .card_content
+      = board.content
     .card_detail
       = image_tag 'default-avatar2.png'
