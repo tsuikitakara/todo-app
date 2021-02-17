@@ -10,6 +10,25 @@ $header-padding-y: 16px;
   padding-left: 10px;
   font-weight: normal;
 
+  &_avater {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    margin-right: 20px;
+  }
+
+  &_loginBtn {
+    background-color: #F8BD1C;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 9px 12px;
+    color: $primary-color;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    // margin-bottom: 12px;
+  }
+
   &_border {
     position: absolute;
     width: 100%;
@@ -19,6 +38,7 @@ $header-padding-y: 16px;
     background: #000000;
     mix-blend-mode: normal;
     opacity: 0.1;
+    margin-top: 10px;
   }
 
   &_pageTitle {
