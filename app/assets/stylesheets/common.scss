@@ -27,8 +27,10 @@
 .dropdown_boards a:hover {
   background-color: white;
   border-radius: 10px;
+  display: block;
 }
 
 .dropdown:hover .dropdown_boards {
   display: block;
+  transition: 1s;
 }
