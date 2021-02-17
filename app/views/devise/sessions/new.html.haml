@@ -10,6 +10,7 @@
       %br/
       = f.password_field :password, autocomplete: "current-password", class: 'text'
     - if devise_mapping.rememberable?
+    = link_to 'Sign up', new_user_registration_path
       .field
     .actions
       = f.submit "Submit", class: 'btn-primary'
