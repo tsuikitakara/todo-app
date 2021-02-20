@@ -1,8 +1,7 @@
 .container
   %p.board_title= @board.title
-  .card
-    .card_title= @board.title
-    .card_content
-      = @board.content
-    .card_detail
-      = image_tag 'default-avatar2.png'
+  - @tasks.each do |task|
+    =render 'commons/show', task: task
+  .new_btn
+    %p
+      = link_to '+ Add new card', new_board_task_path(@board)

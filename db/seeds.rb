@@ -9,7 +9,12 @@
 10.times do
 
 Board.create(
-    title: Faker::Lorem.sentence(word_count: 0),
+    title: Lorem.sentence(wordFaker::_count: 0),
+    content: Faker::Lorem.sentence(word_count: 0),
+)
+
+Task.create(
+    title: Lorem.sentence(wordFaker::_count: 0),
     content: Faker::Lorem.sentence(word_count: 0),
 )
 end

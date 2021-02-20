@@ -1,10 +1,10 @@
 = form_with(model: board, local: true) do |f|
   .field
-    = f.label :title, 'Name', class: 'text'
+    = f.label :title, 'Name'
   .field
     = f.text_field :title, class: 'text'
   .field
-    = f.label :content, 'Description', class: 'text'
+    = f.label :content, 'Description'
   .field
-    = f.text_area :content, class: 'text'
+    = f.text_area :content
   = f.submit 'Submit', class: 'btn-primary'
