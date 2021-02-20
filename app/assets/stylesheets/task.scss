@@ -1,0 +1,25 @@
+.task_comments {
+    display: block;
+    float: right;
+    margin-right: 5%;
+    padding-top: 40px;
+
+    img {
+        opacity: 0.4;
+    }
+  }
+
+.task_content {
+    font-family: Avenir;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    position: relative;
+    display: block;
+    float: right;
+    margin-right: 1%;
+    padding-top: 40px;
+}
+  

@@ -1,13 +1,13 @@
 .card
   .board_detail_actions
-    .dropdown
-      = image_tag 'shape.png'
-      .dropdown_boards
-        -# = link_to 'Edit', edit_board_path(board)
-        -# = link_to 'Delete', board_path(board), data: { method: 'delete', confirm: 'Can I delete it?' } 
+  = link_to board_task_path(@board, task) do
     .card_title
       = task.title
     .card_content
       = task.content
+    .task_comments
+      = image_tag 'shape.png'
+    .task_content
+      %p 24
     .card_detail
       = image_tag 'default-avatar2.png'
