@@ -23,6 +23,8 @@ class Task < ApplicationRecord
     validates :content, presence: true
     # validates :deadline, presence: true
 
+    has_many :comments, dependent: :destroy
+
     belongs_to :user
     belongs_to :board
 end
