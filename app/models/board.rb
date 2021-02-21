@@ -14,6 +14,8 @@
 #  index_boards_on_user_id  (user_id)
 #
 class Board < ApplicationRecord
+    has_one_attached :eyecatch
+
     validates :title, presence: true
     validates :content, presence: true
     
