@@ -1,16 +1,16 @@
-.container 
-  %p.board_title= @task.title
-  .board_detail_actions
-    .dropdown_tasks
-      = image_tag 'action.png'
-      .dropdown_content
-        = link_to 'Edit', edit_board_task_path(@board, @task)
-        = link_to 'Delete', board_task_path(@board, @task), data: { method: 'delete', confirm: 'Can I delete it?' } 
+.container
+  .dropdown_tasks
+    = image_tag 'action.png'
+    .dropdown_tasks_content
+      = link_to 'Edit', edit_board_task_path(@board, @task)
+      = link_to 'Delete', board_task_path(@board, @task), data: { method: 'delete', confirm: 'Can I delete it?' } 
+  %p.task_title= @task.title
   - if @task.eyecatch.attached?
     .card_image
       = image_tag @task.eyecatch, class: 'task_show_image'
-    .view_content
-      = @task.content
+    .task_back
+      .task_details
+        = @task.content
   %p.comment_title Comment
 
   .task_comment
