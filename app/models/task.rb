@@ -18,13 +18,16 @@
 #
 class Task < ApplicationRecord
     has_one_attached :eyecatch
+    has_many :comments, dependent: :destroy
 
     validates :title, presence: true
     validates :content, presence: true
     # validates :deadline, presence: true
 
-    has_many :comments, dependent: :destroy
-
     belongs_to :user
     belongs_to :board
+
+    def comment_count
+        comments.count
+    end
 end
