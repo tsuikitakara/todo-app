@@ -1,25 +1,34 @@
-.task_comments {
-    display: block;
+.task {
+
+ &_comments {
     float: right;
-    margin-right: 5%;
     padding-top: 40px;
+    margin-right: 5%;
 
-    img {
-        opacity: 0.4;
+     img {
+      opacity: 0.4;
     }
-  }
+ }
 
-.task_content {
+ &_content {
     font-family: Avenir;
     font-size: 14px;
     line-height: 19px;
     color: #000000;
     mix-blend-mode: normal;
     opacity: 0.4;
-    position: relative;
     display: block;
     float: right;
     margin-right: 1%;
     padding-top: 40px;
+ }
+
+ &_image {
+     width: 100%;
+     padding: 20px 20px 0 20px;
+ }
+ &_show_imag {
+    width: 100%;
+    padding: 20px 20px 0 20px;
+ }
 }
-  

@@ -1,6 +1,8 @@
-.card
-  .board_detail_actions
-  = link_to board_task_path(@board, task) do
+= link_to board_task_path(@board, task) do
+  .card
+    - if task.eyecatch.attached?
+      .card_image
+        = image_tag task.eyecatch, class: 'task_image'
     .card_title
       = task.title
     .card_content
