@@ -9,7 +9,7 @@
   }
 
   &_icon {
-    width: 40px;
+    width: 40x;
     height: 40px;
     margin-right: 10px;
   }
@@ -22,4 +22,9 @@
     line-height: 22px;
     color: #000000;
   }
+}
+
+.comments {
+  display: flex;
+  margin-bottom: 25px;
 }
