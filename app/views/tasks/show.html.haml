@@ -13,9 +13,9 @@
         = @task.content
   %p.comment_title Comment
   - @comments.each do |comment|
-    .task_comments
+    .comments
       .comment_icon
-        = image_tag comment.user.avatar_image
+        = image_tag comment.user.avatar_image, class: 'comment_icon'
       .comment_content
         = comment.content 
   .task_comment
