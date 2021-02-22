@@ -15,9 +15,9 @@
   - @comments.each do |comment|
     .task_comments
       .comment_icon
-        = image_tag 'default-avatar2.png'
+        = image_tag comment.user.avatar_image
       .comment_content
-        = comment.content
+        = comment.content 
   .task_comment
     %p
       = link_to '+ Add new comment', new_board_task_comment_path(@board, @task)
