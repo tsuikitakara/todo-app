@@ -1,0 +1,12 @@
+.container
+  %h2.field Edit Profile
+  = form_with(model: @profile, url: profile_path, method: 'put', local: true) do |f|
+    .field
+      = f.label :avatar, 'avatar'
+    .field
+      = f.file_field :avatar
+    .field
+      = f.label :nickname, 'Name'
+    .field
+      = f.text_field :nickname, class: 'text'
+    = f.submit 'Submit', class: 'btn-primary'
