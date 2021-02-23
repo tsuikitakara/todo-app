@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'hamlit'
 gem 'annotate'
+gem 'faker'
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'aws-sdk-s3', require: false
