@@ -7,11 +7,6 @@
 #  title      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  user_id    :bigint
-#
-# Indexes
-#
-#  index_boards_on_user_id  (user_id)
 #
 require 'test_helper'
 

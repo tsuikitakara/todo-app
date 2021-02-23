@@ -41,8 +41,6 @@ ActiveRecord::Schema.define(version: 2021_02_21_130151) do
     t.text "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "user_id"
-    t.index ["user_id"], name: "index_boards_on_user_id"
   end
 
   create_table "comments", force: :cascade do |t|
